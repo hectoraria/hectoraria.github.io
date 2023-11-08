@@ -1,0 +1,10 @@
+body{
+	margin: 12px;
+	background-color: lightpink;
+	color: darkblue; 
+}
+table{
+	border: 1px;
+	background-color:  darkgrey;
+	border-radius: 4px;
+}
