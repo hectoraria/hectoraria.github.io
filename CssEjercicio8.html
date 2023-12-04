@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	.caja{
+		max-width: 500px;
+		border:solid 2px;
+		background-color: pink;
+		margin: 20px;
+		padding: 10px;
+	}
+	.box{
+		transition-duration: 1s;
+		border:solid;
+		background-color: green;
+		max-width: 100px;
+		animation: 
+			move:move-right 5s linear; 
+	}
+	.box:hover{
+		background-color: pink;
+	}
+@keyframes change-color {
+ 	 0% {
+     background: red;         /* Primer fotograma */
+  	}
+  	50% {
+     background: yellow;      /* Segundo fotograma */
+   	 width: 400px;
+  	}
+  	100% {
+   	 background: green;       /* Último fotograma */
+  		}
+	}
+	
+	#cajaanimacion {
+ 	 background: grey;
+     color: #FFF;
+  	 width: 150px;
+ 	 height: 150px;
+ 	 animation: change-color 2s ease 0s infinite;
+	}
+    
+
+</style>
+</head>
+<body>
+	<div class="caja">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus quis tellus molestie tincidunt. Nam dictum consectetur massa vel feugiat. Morbi vitae diam malesuada, dapibus tellus vitae, venenatis eros. Mauris sem sapien, dapibus vel facilisis sed, congue id magna. Quisque nisi arcu, efficitur sed convallis et, euismod et urna. Mauris tempor felis justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur nisl dui, fermentum quis nulla non, sollicitudin dignissim risus. Fusce id malesuada erat, posuere euismod magna. Quisque convallis luctus dictum. Nunc felis dolor, tempus vitae lacus at, laoreet faucibus dui. Vivamus egestas maximus neque, vel bibendum enim tincidunt nec.
+		</p>
+
+	</div>
+	<br>
+	<div class="box">1</div><br><br>
+	<div class="box">2</div><br><br>
+	<div id="cajaanimacion" class="box" class="animated">3</div>
+
+</body>
+</html>
